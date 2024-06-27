@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="EN" class="changesMode">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/uas8iwl.css">
+    <script src="index.js" defer></script>
+    <meta charset="UTF-8">
+    <title>Nobody's Favorite Band</title>
+</head>
+<body>
+    <header class="changesMode">
+        <h1>Nobody's Favorite Band</h1>
+        <img src="images/lightmode_icon.png" alt="light and dark mode control" id="lightDarkMode">
+        <img src="images/bandlogo_cropped.jpg" alt="Nobody's Favorite band logo">
+        <nav class="changesMode">
+            <h2>Main Navigation</h2>
+            <ul>
+                <li class="changesMode"><a href="#upcomingShows">Upcoming Shows</a></li>
+                <li class="changesMode"><a href="#merchPreview">Merch</a></li>
+                <li class="changesMode"><a href="#randomNumGame">Win a Sticker!</a></li>
+                <li class="changesMode"><a href="#contactForm">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <figure id="bandInfo" class="changesMode">
+            <img src="images/band_back.jpg" alt="rear view of the band performing">
+            <figcaption class="changesMode">Up and coming pop punk band from Moorhead, Minnesota<br>Check out the dates below for our upcoming shows, snag some merch, or leave us a message!</figcaption>
+        </figure>
+        <section id="upcomingShows" class="changesMode">
+            <h2>Upcoming Shows</h2>
+            <div id="showsGrid">
+                <img src="images/band_front.jpg" alt="front view of the band performing" id="upcomingShowsImg">
+                <ul id="showsList">
+                    <li id="date1" class="changesMode">Sat, Feb 17 @ 7pm</li>
+                    <li id="date2" class="changesMode">Sun, May 5 @ 7pm</li>
+                    <li id="date3" class="changesMode">Fri, July 12 @ 7pm</li>
+                    <li id="date4" class="changesMode">Sat, July 13 @ 7pm</li>
+                </ul>
+            </div>
+            <span id="showInfo">MSUM Battle of the Bands- Saturday, February 17 at 7pm @ the CMU Ballroom</span>
+        </section>
+        <section id="merchPreview" class="changesMode">
+            <h2>Merch</h2>
+            <div id="merchGrid">
+                <ul id="merchList">
+                    <li id="tshirt" class="changesMode">T-Shirt</li>
+                    <li id="sweatshirt" class="changesMode">Sweatshirt</li>
+                    <li id="tote" class="changesMode">Tote Bag</li>
+                    <li id="sticker" class="changesMode">Sticker Pack</li>
+                </ul>
+                <img src="images/tshirt.png" alt="black t-shirt with band logo" id="merchPreviewImg">
+            </div>
+            <span id="merchInfo">Nobody's Favorite black t-shirt: $20</span>
+        </section>
+        <section id="randomNumGame" class="changesMode">
+            <h2>Win a Free Sticker!</h2>
+            <p>Who doesn't love stickers? Pick a number from 1 to 10, if you guess correctly you'll win a free Nobody's Favorite sticker that you can collect at our next live show!</p>
+            <label for="userNumber">Pick a number:</label>
+            <input type="number" name="userNumber" id="userNumber" min="1" max="10" value="1">
+            <button id="randomNumberButton">Enter!</button>
+            <span id="gameMessage"></span>
+        </section>
+        <section id="contactForm" class="changesMode">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="fullName">*Full Name:</label>
+                <span id="nameError" class="changesMode"></span>
+                <input type="text" name="fullName" id="fullName" class="changesMode" required>
+                <label for="phone">Phone Number:</label>
+                <span id="phoneError" class="changesMode"></span>
+                <input type="text" name="phone" id="phone" class="changesMode">
+                <label for="email">Email Address:</label>
+                <span id="emailError" class="changesMode"></span>
+                <input type="email" name="email" id="email" class="changesMode"> 
+                <label for="comments">*Comments:</label>
+                <span id="commentError" class="changesMode"></span>
+                <textarea name="comments" id="comments" class="changesMode" required></textarea>
+                <fieldset class="changesMode">
+                    <legend>How would you prefer to be contacted?</legend>
+                    <input type="radio" name="preferredContact" id="phoneRadioButton" required checked>
+                    <label for="phoneRadioButton">By Phone</label>
+                    <input type="radio" name="preferredContact" id="emailRadioButton">
+                    <label for="emailRadioButton">By Email</label>
+                </fieldset>
+                <span id="submitError" class="changesMode"></span>
+                <button id="submitForm">Submit</button>
+                <span id="submissionInfo"></span>
+            </form>
+        </section>
+    </main>
+    <footer class="changesMode">
+        <h3>Nobody's Favorite</h3>
+        <small>Copyright 2023<br>Nobody's Favorite Band</small>
+    </footer>
+</body>
+</html>
